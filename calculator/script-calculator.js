@@ -6,9 +6,14 @@ function clearScreen() {
     document.getElementById('screen').value = '';
     
 }
+
+function initialScreen(initValue) {
+    document.getElementById('screen').value = initValue;
+
+}
+
 function pourcentage(values) {
-    console.log(values);
-    document.getElementById('screen').value += values;
+    document.getElementById('screen').value = eval(document.getElementById('screen').value += values) ;
 }
 
 function calculate() {
